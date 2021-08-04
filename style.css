@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Lemonada&family=Poppins:wght@300&family=Roboto+Condensed:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lemonada", "Merriweather", sans-serif;
+  font-size: 32px;
+}
+
+body {
+  background-color: rgb(32, 35, 48);
+  font-family: "Poppins", "Open-Sans", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  color: white;
+  height: 1100px;
+}
+
+.nav-bar {
+  position: relative;
+  width: 100%;
+}
+.a-n-logo {
+  float: left;
+  max-width: 300px;
+  margin-top: -30px;
+}
+nav {
+  padding-left: 450px;
+  padding-top: 25px;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+  padding-top: 30px;
+  text-align: center;
+  list-style: none;
+}
+nav li {
+  margin-left: 100px;
+  padding-left: 70px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: red;
+}
+nav a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: red;
+  position: relative;
+  top: 0px;
+
+  width: 0%;
+  transition: all ease-in-out 0.2s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+.background-img1 {
+  background-image: url("https://cdn.glitch.com/83a3feff-e4ca-47c1-87b7-e790a2db91ec%2FBackground-img.jpg?v=1613779408917");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+.background-img2 {
+  background-image: url("https://cdn.glitch.com/83a3feff-e4ca-47c1-87b7-e790a2db91ec%2Frsz_fb_img_1508426394432.jpg?v=1616536832925");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 10%;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+#heading-aboutme {
+  text-align: center;
+  margin-top: 50px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 75px;
+}
+.me-slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0;
+  animation: 35s slider infinite;
+}
+.me-slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes me-slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.me-slider {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  max-width: 100%;
+  overflow: hidden;
+}
+#family-wedding {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  line-height: 180%;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+#school {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  line-height: 200%;
+  margin: 25px;
+}
+#hobby {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  line-height: 200%;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+#future {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.wedding-slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  margin-top: 20px;
+  left: 0;
+  animation: 45s slider infinite;
+}
+.wedding-slider figure img {
+  width: 20%;
+  float: left;
+}
+.wedding-slider {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  max-width: 100%;
+  overflow: hidden;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.topbutton {
+  grid-column: 2/3;
+  display: flex;
+  padding-top: 75px;
+  justify-content: center;
+  align-items: center;
+}
+.topbutton a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  transition: 0.5s;
+  outline: red;
+}
+.topbutton a:hover {
+  color: red;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+}
+#copyright {
+  grid-column: 1/2;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 150px;
+}
+.social-media-links {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 70px;
+  padding-right: 75px;
+}
+#gmail,
+#instagram,
+#facebook,
+#linkedin {
+  max-width: 100px;
+  max-height: 100px;
+  border: none;
+}
+#gmail:hover,
+#instagram:hover,
+#facebook:hover,
+#linkedin:hover {
+  border: 10px solid red;
+  transition: 1s;
+}
+/*name animation*/
+#namelogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  animation: fill 1s ease forwards 3.6s;
+}
+#namelogo path:nth-child(1) {
+  stroke-dasharray: 378.23;
+  stroke-dashoffset: 378.23;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(2) {
+  stroke-dasharray: 530.67;
+  stroke-dashoffset: 530.67;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(3) {
+  stroke-dasharray: 530.67;
+  stroke-dashoffset: 530.67;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(4) {
+  stroke-dasharray: 331.5;
+  stroke-dashoffset: 331.5;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(5) {
+  stroke-dasharray: 341.9;
+  stroke-dashoffset: 341.9;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(6) {
+  stroke-dasharray: 464;
+  stroke-dashoffset: 464;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(7) {
+  stroke-dasharray: 349.76;
+  stroke-dashoffset: 349.76;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(8) {
+  stroke-dasharray: 184.24;
+  stroke-dashoffset: 184.24;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(9) {
+  stroke-dasharray: 314.77;
+  stroke-dashoffset: 314.77;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(10) {
+  stroke-dasharray: 331.5;
+  stroke-dashoffset: 331.5;
+  animation: line-anim 3.5s ease forwards;
+}
+#namelogo path:nth-child(11) {
+  stroke-dasharray: 341.93;
+  stroke-dashoffset: 341.93;
+  animation: line-anim 3.5s ease forwards;
+}
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+/* project page CSS*/ /* project page CSS*/
+/* project page CSS*/ /* project page CSS*/
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  margin: 50px;
+  margin-top: -20px;
+}
+.project-title {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 50px;
+  text-align: center;
+}
+.project1-img {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  overflow: hidden;
+}
+.project1-text {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  text-align: center;
+  margin: 60px;
+}
+.project2-img {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  overflow: hidden;
+}
+.project2-text {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  text-align: center;
+  margin: 70px;
+  padding-top: 50px;
+}
+.project3-text {
+  grid-column: 2/3;
+  text-align: center;
+  margin: 50px;
+  padding-top: 50px;
+}
+.project3-img {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.Checkit {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  transition: 0.5s;
+  outline: red;
+}
+.Checkit:hover {
+  color: red;
+  border: 15px double red;
+  transition: 1s;
+}
+
+/* Contact page CSS*/
+.contact-body {
+  height: 1020px;
+}
+.freespace {
+  margin: 90px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.contact-img {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+form {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+/* form animation starts */
+.form {
+  background: clear;
+  border-radius: 5px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.form-title {
+  display: block;
+  font-family: "Lemonada", "Merriweather", sans-serif;
+  margin: 10px auto 5px;
+  width: 500px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.name {
+  background-color: #ebebeb;
+  color: black;
+  height: 2em;
+  overflow: hidden;
+}
+.name:hover {
+  border-bottom: 5px solid red;
+  height: 60px;
+  width: 500px;
+  transition: ease 2s;
+}
+
+.email {
+  background-color: #ebebeb;
+  height: 2em;
+}
+
+.email:hover {
+  border-bottom: 5px solid red;
+  height: 60px;
+  width: 500px;
+  transition: ease 2s;
+}
+
+.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.message:hover {
+  border-bottom: 10px solid red;
+  height: 14em;
+  width: 500px;
+  transition: ease 2s;
+}
+
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: red;
+  font-size: 20px;
+}
+
+.submit:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-top: 5px solid #0e3750;
+  border-radius: 0%;
+}
+
+.blankspace {
+  margin: 120px;
+}
